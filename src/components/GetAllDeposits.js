@@ -5,9 +5,7 @@ const GetAllDeposits = ({  }) => {
         const url =
           "https://w4tbyyb2ai.execute-api.us-east-1.amazonaws.com/getAllDeposits";
         const response = await fetch(url);
-        console.log("Response: ", response);
         const body = await response.json();
-        console.log("Body: ", body);
         const entries = body["Items"];
         console.log(entries);
     };

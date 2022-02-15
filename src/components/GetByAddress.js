@@ -6,9 +6,8 @@ const GetByAddress = ({  }) => {
     const getByAddress = async () => {
         const url = `https://w4tbyyb2ai.execute-api.us-east-1.amazonaws.com/getByAddress/${address}`;
         const response = await fetch(url);
-        console.log(response)
         const body = await response.json();
-        console.log(body)
+        console.log(body["Items"])
         return;
     }
     return (

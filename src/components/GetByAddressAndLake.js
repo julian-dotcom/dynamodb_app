@@ -7,9 +7,8 @@ const GetByAddressAndLake = ({  }) => {
         const baseUrl = 'https://w4tbyyb2ai.execute-api.us-east-1.amazonaws.com/getByAddressAndLake';
         const params = `?address=${address}&lake=${lake}`;
         const response = await fetch(baseUrl+params);
-        console.log('Response: ', response)
         const body = await response.json();
-        console.log('Body: ',body)
+        console.log(body["Items"])
         return;
     }
     return (

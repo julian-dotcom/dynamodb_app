@@ -24,9 +24,8 @@ const PostCustomDeposit = ({  }) => {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(deposit),
         });
-        console.log("Post response: ", response);
         response = await response.json();
-        console.log("Response: ", response);
+        console.log(response);
       };
 
     return (

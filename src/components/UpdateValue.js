@@ -24,7 +24,6 @@ const UpdateValue = () => {
         };
         const response = await fetch(baseUrl, request);
 
-        console.log(response)
         const body = await response.json();
         console.log(body)
         return;
